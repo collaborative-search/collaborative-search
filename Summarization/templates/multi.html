@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Summary</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+        }
+
+        div {
+            border: 1px solid gray;
+            padding: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            color: lightskyblue;
+        }
+
+        p {
+            text-indent: 50px;
+            text-align: justify;
+            letter-spacing: 3px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #008CBA;
+        }
+    </style>
+
+
+</head>
+
+<body id="page-top">
+    <div class="container-fluid p-0">
+        <div class="summary">
+            <h1>
+                Summary
+            </h1>
+            {% for key, value in data.items() %}
+            <h1>{{key}}</h1>
+            <p> {{value}}</p><br>
+            {% endfor %}
+        </div>
+</body>
+
+</html>

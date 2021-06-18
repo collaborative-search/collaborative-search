@@ -1,0 +1,2 @@
+api: nodemon .\scripts\server.js
+worker:  nodemon .\scripts\worker.js

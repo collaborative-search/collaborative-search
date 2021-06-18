@@ -1,0 +1,64 @@
+Variations of the Similarity Function of
+TextRank for Automated Summarization
+tion for the TextRank algorithm for automated summarization of texts.
+Keywords: TextRank variations, automated summarization, Informa-
+TextRank is a graph-based extractive summarization algorithm.
+algorithm widely used: it performs well summarizing structured text like news
+overview of the TextRank algorithm.
+Traditional methods for text summarization analyze the frequency of words
+or sentences in the first paragraphs of the text to identify the most important
+Other methods are based in the representation of the text as a graph.
+graph-based ranking approaches consider the intrinsic structure of the texts in-
+text (sentences or words) using variations of PageRank [20].
+TextRank is an unsupervised algorithm for the automated summarization of
+texts that can also be used to obtain the most important keywords in a document.
+The algorithm applies a variation of PageRank [20] over a graph constructed
+3.2 Text as a Graph
+For the task of automated summarization, TextRank models any document as
+the graph edges, the higher the similarity between sentences the more important
+from one sentence to another if they are very similar.
+TextRank determines the relation of similarity between two sentences based
+Given Si, Sj two sentences represented by a set of n words that
+n. The similarity function for Si, Sj
+The result of this process is a dense graph representing the document.
+original TextRank algorithm.
+distances between sentences are computed to weight the edges of the graph used
+variations to produce significative improvements over the original algorithm.
+Given two sentences R, S, BM25 is defined as:
+We found the resulting scores of the original algorithm to be identical to those
+the edges for the TextRank graph.
+Evaluation results for the proposed TextRank variations.
+TextRank 0.3983 0.1762 0.1948 –
+an improvement of 2.92% above the original TextRank result using BM25 and
+the original TextRank algorithm with 1.40% total improvement.
+We also contributed the BM25-TextRank algorithm to the Gensim project4
+This work presented three different variations to the TextRank algorithm for au-
+2.92% over the TextRank score is an important result.
+Based on these results we suggest the use of BM25 along with TextRank for
+the task of unsupervised automatic summarization of texts.
+TextRank algorithm without a performance penalty.
+DC, USA (2014), http://dx.doi.org/10.1109/WI-IAT.2014.70
+Computational Linguistics 31(3), 297–328 (2005), http://dblp.uni-trier.
+4. Das, D., Martins, A.F.T.: A survey on automatic text summarization.
+5. Document Understanding Conference: Duc 2002 guidelines (July 2002), http://
+43(6), 1705–1714 (Nov 2007), http://dx.doi.org/10.1016/j.ipm.2007.
+http://dx.doi.org/10.1109/WI-IAT.2014.70
+http://dx.doi.org/10.1016/j.ipm.2007.01.015
+http://dx.doi.org/10.1016/j.ipm.2007.01.015
+7. Erkan, G., Radev, D.R.: Lexrank: Graph-based lexical centrality as salience in text
+46(5), 604–632 (Sep 1999), http://doi.acm.org/10.1145/324133.324140
+159–165 (Apr 1958), http://dx.doi.org/10.1147/rd.22.0159
+Mihalcea, R.: Graph-based ranking algorithms for sentence extraction, applied to
+text summarization.
+Stroudsburg, PA, USA (2004), http://dx.doi.org/10.3115/1219044.1219064
+Mihalcea, R., Tarau, P.: Textrank: Bringing order into texts.
+Mitrat, M., Singhal, A., Buckleytt, C.: Automatic text summarization by para-
+based document summarization.
+In: Proceedings of The Third Text REtrieval Conference, TREC 1994,
+http://www.isca-speech.org/archive/interspeech_2009/i09_1499.html
+http://www.isca-speech.org/archive/interspeech_2009/i09_1499.html
+http://doi.acm.org/10.1145/324133.324140
+http://dx.doi.org/10.1147/rd.22.0159
+http://dx.doi.org/10.3115/1219044.1219064
+109–126 (1994), http:
+Variations of the Similarity Function of TextRank for Automated Summarization
